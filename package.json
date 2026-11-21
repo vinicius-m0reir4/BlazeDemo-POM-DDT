@@ -1,0 +1,20 @@
+{
+  "name": "blazedemo-pom-ddt",
+  "version": "1.0.0",
+  "description": "Projeto de automacao web com Playwright, Page Object Model e Data-Driven Testing para o BlazeDemo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:compra": "playwright test tests/compra.spec.js",
+    "test:login": "playwright test tests/login.spec.js",
+    "test:cadastro": "playwright test tests/cadastro.spec.js",
+    "test:senha": "playwright test tests/esqueci-senha.spec.js",
+    "test:destino": "playwright test tests/destino-semana.spec.js",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  }
+}
